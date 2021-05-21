@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .chart-container {
+            max-width: 1050px;
+           
+            margin: 0 auto;
+            /* auto centers the div */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        svg {
+            
+            overflow: visible;
+        }
+
+
+        h1 {
+            
+        }
+        .grid-example {
+            display: grid;
+            grid-template-columns: 500px 500px;
+            row-gap: 50px;
+            column-gap: 50px;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chart-container">
+        <h1 class="headline">
+            Poverty population of people over 18 in the US
+        </h1>
+        <div class="grid-example">
+            <img src="county-topo-3.svg">
+        </div>
+
+        <div>
+            I choose the quantile method for the color. Because quantile break can show the distribution of data.
+        </div>
+
+        <div class="grid-example">
+            <img src="dataviz-key.svg">
+           
+        </div>
+    </div>
+</body>

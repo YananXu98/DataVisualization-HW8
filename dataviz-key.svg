@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="500" height="121" viewBox="0 0 500 121" stroke-linecap="butt" stroke-linejoin="round">
+<style>
+  path {shape-rendering: crispEdges;}
+</style>
+<g id="layer7">
+<path d="M 1 90.64 1 1 5.98 1 5.98 90.64 1 90.64 Z" fill="#ddd"/>
+<path d="M 5.98 90.64 5.98 81.17 10.96 81.17 10.96 90.64 5.98 90.64 Z" fill="#ddd"/>
+<path d="M 10.96 90.64 10.96 87.84 15.94 87.84 15.94 90.64 10.96 90.64 Z" fill="#ddd"/>
+<path d="M 15.94 90.64 15.94 88.82 20.92 88.82 20.92 90.64 15.94 90.64 Z" fill="#ddd"/>
+<path d="M 20.92 90.64 20.92 89.36 25.9 89.36 25.9 90.64 20.92 90.64 Z" fill="#ddd"/>
+<path d="M 25.9 90.64 25.9 89.83 30.88 89.83 30.88 90.64 25.9 90.64 Z" fill="#ddd"/>
+<path d="M 30.88 90.64 30.88 90.13 35.86 90.13 35.86 90.64 30.88 90.64 Z" fill="#ddd"/>
+<path d="M 35.86 90.64 35.86 90.17 40.84 90.17 40.84 90.64 35.86 90.64 Z" fill="#ddd"/>
+<path d="M 40.84 90.64 40.84 90.4 45.82 90.4 45.82 90.64 40.84 90.64 Z" fill="#ddd"/>
+<path d="M 45.82 90.64 45.82 90.44 50.8 90.44 50.8 90.64 45.82 90.64 Z" fill="#ddd"/>
+<path d="M 50.8 90.64 50.8 90.51 55.78 90.51 55.78 90.64 50.8 90.64 Z" fill="#ddd"/>
+<path d="M 55.78 90.64 55.78 90.54 60.76 90.54 60.76 90.64 55.78 90.64 Z" fill="#ddd"/>
+<path d="M 65.74 90.64 65.74 90.51 70.72 90.51 70.72 90.64 65.74 90.64 Z" fill="#ddd"/>
+<path d="M 70.72 90.64 70.72 90.54 75.7 90.54 75.7 90.64 70.72 90.64 Z" fill="#ddd"/>
+<path d="M 75.7 90.64 75.7 90.54 80.68 90.54 80.68 90.64 75.7 90.64 Z" fill="#ddd"/>
+<path d="M 80.68 90.64 80.68 90.57 85.66 90.57 85.66 90.64 80.68 90.64 Z" fill="#ddd"/>
+<path d="M 95.62 90.64 95.62 90.61 100.6 90.61 100.6 90.64 95.62 90.64 Z" fill="#ddd"/>
+<path d="M 100.6 90.64 100.6 90.61 105.58 90.61 105.58 90.64 100.6 90.64 Z" fill="#ddd"/>
+<path d="M 105.58 90.64 105.58 90.57 110.56 90.57 110.56 90.64 105.58 90.64 Z" fill="#ddd"/>
+<path d="M 115.54 90.64 115.54 90.61 120.52 90.61 120.52 90.64 115.54 90.64 Z" fill="#ddd"/>
+<path d="M 120.52 90.64 120.52 90.57 125.5 90.57 125.5 90.64 120.52 90.64 Z" fill="#ddd"/>
+<path d="M 125.5 90.64 125.5 90.57 130.48 90.57 130.48 90.64 125.5 90.64 Z" fill="#ddd"/>
+<path d="M 135.46 90.64 135.46 90.61 140.44 90.61 140.44 90.64 135.46 90.64 Z" fill="#ddd"/>
+<path d="M 140.44 90.64 140.44 90.61 145.42 90.61 145.42 90.64 140.44 90.64 Z" fill="#ddd"/>
+<path d="M 150.4 90.64 150.4 90.57 155.38 90.57 155.38 90.64 150.4 90.64 Z" fill="#ddd"/>
+<path d="M 170.32 90.64 170.32 90.61 175.3 90.61 175.3 90.64 170.32 90.64 Z" fill="#ddd"/>
+<path d="M 175.3 90.64 175.3 90.61 180.28 90.61 180.28 90.64 175.3 90.64 Z" fill="#ddd"/>
+<path d="M 220.12 90.64 220.12 90.61 225.1 90.61 225.1 90.64 220.12 90.64 Z" fill="#ddd"/>
+<path d="M 250 90.64 250 90.61 254.98 90.61 254.98 90.64 250 90.64 Z" fill="#ddd"/>
+<path d="M 314.74 90.64 314.74 90.61 319.72 90.61 319.72 90.64 314.74 90.64 Z" fill="#ddd"/>
+<path d="M 494.02 90.64 494.02 90.61 499 90.61 499 90.64 494.02 90.64 Z" fill="#ddd"/>
+</g>
+<g id="layer8">
+<path d="M 1 100.6 1 90.64 1.26 90.64 1.26 100.6 1 100.6 Z" fill="#edf8e9"/>
+<path d="M 1.26 100.6 1.26 90.64 1.62 90.64 1.62 100.6 1.26 100.6 Z" fill="#c7e9c0"/>
+<path d="M 1.62 100.6 1.62 90.64 2.07 90.64 2.07 100.6 1.62 100.6 Z" fill="#a1d99b"/>
+<path d="M 2.07 100.6 2.07 90.64 2.68 90.64 2.68 100.6 2.07 100.6 Z" fill="#74c476"/>
+<path d="M 2.68 100.6 2.68 90.64 3.9 90.64 3.9 100.6 2.68 100.6 Z" fill="#41ab5d"/>
+<path d="M 3.9 100.6 3.9 90.64 6.94 90.64 6.94 100.6 3.9 100.6 Z" fill="#238b45"/>
+<path d="M 6.94 100.6 6.94 90.64 499 90.64 499 100.6 6.94 100.6 Z" fill="#005a32"/>
+<g/>
+</g>
+<g id="layer9" fill="none" stroke="black" stroke-width="1">
+<path d="M 1 90.64 1 106.58" stroke="rgba(0,0,0,0.3)"/>
+<path d="M 1.26 90.64 1.26 106.58" stroke="rgba(0,0,0,0.3)"/>
+<path d="M 1.62 90.64 1.62 106.58" stroke="rgba(0,0,0,0.3)"/>
+<path d="M 2.07 90.64 2.07 106.58" stroke="rgba(0,0,0,0.3)"/>
+<path d="M 2.68 90.64 2.68 106.58" stroke="rgba(0,0,0,0.3)"/>
+<path d="M 3.9 90.64 3.9 106.58" stroke="rgba(0,0,0,0.3)"/>
+<path d="M 6.94 90.64 6.94 106.58" stroke="rgba(0,0,0,0.3)"/>
+<path d="M 499 90.64 499 106.58" stroke="rgba(0,0,0,0.3)"/>
+</g>
+<g id="layer10" font-family="sans-serif" font-size="12" text-anchor="middle">
+<text y="0" x="0" transform="translate(1 119.6236)" font-family="sans-serif" font-size="13" text-anchor="start" fill="#555">0</text>
+<text y="0" x="0" transform="translate(1.261 119.6236)" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#555">238</text>
+<text y="0" x="0" transform="translate(1.6175 119.6236)" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#555">563</text>
+<text y="0" x="0" transform="translate(2.065 119.6236)" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#555">971</text>
+<text y="0" x="0" transform="translate(2.6824 119.6236)" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#555">1534</text>
+<text y="0" x="0" transform="translate(3.8998 119.6236)" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#555">2644</text>
+<text y="0" x="0" transform="translate(6.9357 119.6236)" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#555">5412</text>
+<text y="0" x="0" transform="translate(499 119.6236)" font-family="sans-serif" font-size="13" text-anchor="end" fill="#555">454064</text>
+</g>
+</svg>
