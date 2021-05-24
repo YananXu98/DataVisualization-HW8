@@ -17,38 +17,209 @@
             overflow: visible;
         }
 
+        .pop-up {
+            position: absolute; 
+            /*border: 1px solid black;
+            border-radius: 1px; */
+            line-height: 1.2;
+            width: 200px;
+            pointer-events: none;
+            background-color: white;
+            padding: 10px;
+        }
+
 
         h1 {
             
         }
-        .grid-example {
-            display: grid;
-            grid-template-columns: 500px 500px;
-            row-gap: 50px;
-            column-gap: 50px;
-        }
-        img {
-            width: 100%;
-        }
     </style>
+    <!-- add your script blocks at the end -->
+
 </head>
 
 <body>
     <div class="chart-container">
         <h1 class="headline">
-            Poverty population of people over 18 in the US
+            Poverty Population over 18-year-old in US 
         </h1>
-        <div class="grid-example">
-            <img src="county-topo-3.svg">
-        </div>
 
-        <div>
-            I choose the quantile method for the color. Because quantile break can show the distribution of data.
-        </div>
+        <svg width="1050px" height="500px">
 
-        <div class="grid-example">
-            <img src="dataviz-key.svg">
-           
-        </div>
+        </svg>
     </div>
 </body>
+
+
+<!-- we're using d3 version 6 (the latest version) for all out work -->
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+<!-- load topojson script -->
+<script src="https://unpkg.com/topojson@3"></script>
+
+<script>
+    console.log({ d3 })
+    console.log({ topojson })
+
+    // //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+    Promise.all([ //waits for all the data to load, then when loaded will return it all in one array called res
+        d3.json('hw7_topo4.json'),
+    ])
+        .then(ready)
+        .catch((err) => {
+            console.log(err);
+        });
+
+    let popup = d3.select(".pop-up");
+
+    function ready(res) {
+        console.log(res[0])
+        let raw = res[0]
+
+        let county = topojson.feature(raw, raw.objects.county);
+        let state = topojson.feature(raw, raw.objects.state);
+
+        let width = 1050;
+        let height = 500;
+
+        console.log(county, state)
+
+        let svg = d3.select("body").select("svg")
+
+        let myProjection = d3.geoAlbersUsa()
+            .fitSize([width, height], county)
+
+        //path function
+        let path = d3.geoPath()
+            .projection(myProjection)
+
+        let innerlines = topojson.mesh(raw, raw.objects.state, function (a, b) {
+            return a != b;
+        });
+
+
+        svg
+            .selectAll(".states")
+            .data(county.features)
+            .join("path")
+            .attr("d", path)
+            .style("fill", function(d){
+                value=d.properties.pop_18_in_poverty;
+                if(value<467.5){
+                    return "lightgrey";
+                } else if(value<1247) {
+                    return "grey"
+                } else if(value<3025.75){
+                    return "lightgreen"
+                } else {
+                    return "green"
+                }
+
+            })
+            .style("stroke", "none")
+            .style("pointer-events", "none")
+
+
+        let states = svg
+            .append("path")
+            .attr("d", path(innerlines))
+            .style("fill", "none")
+            .style("stroke", "#333")
+            .style("stroke-width", 1)
+            .style("pointer-events", "none")
+
+        let legend = svg
+            .append("circle")
+            .attr("cx", 890)
+            .attr("cy", 300)
+            .attr("r", 5)
+            .style("fill", "lightgrey")
+            
+        svg.append("text")
+            .text("1st quantile")
+            .attr("x", 900)
+            .attr("y", 305)
+
+        let legend2 = svg
+            .append("circle")
+            .attr("cx", 890)
+            .attr("cy", 320)
+            .attr("r", 5)
+            .style("fill", "grey")
+          
+
+        svg.append("text")
+            .text("2nd quantile")
+            .attr("x", 900)
+            .attr("y", 325)
+
+        let legend3 = svg
+            .append("circle")
+            .attr("cx", 890)
+            .attr("cy", 340)
+            .attr("r", 5)
+            .style("fill", "lightgreen")
+
+
+        svg.append("text")
+            .text("3rd quantile")
+            .attr("x", 900)
+            .attr("y", 345)
+
+        let legend4 = svg
+            .append("circle")
+            .attr("cx", 890)
+            .attr("cy", 360)
+            .attr("r", 5)
+            .style("fill", "green")
+        
+        svg.append("text")
+            .text("4th quantile")
+            .attr("x", 900)
+            .attr("y", 365)
+
+        
+
+        // I tried to put mouseover but failed.
+        /*my_counties = svg.selectAll(".counties")
+                         .data(county.features)
+                         .on("mouseover", function(event, d){
+                            let lang = 'test';
+                            popup
+                            .style("opacity", 1)
+                            .style("left", (event.x - 10) + "px")
+                            .style("top", (event.y - 10) + "px")
+                            .html(lang)
+                            
+                        })*/
+    // I tried to put mouseover but failed.                    
+    states.on("mouseover", function(event, d){
+        console.log(event)
+                            let lang = 'test';
+                            popup
+                            .style("opacity", 1)
+                            .style("left", (event.x - 10) + "px")
+                            .style("top", (event.y - 10) + "px")
+                            .html(lang)
+                            
+                        })
+        
+    states.on("mouseout", (event, d) => {
+            console.log(event)
+            popup
+                .style("opacity", 0)
+
+        })
+        
+
+
+    
+    }
+
+
+
+
+
+
+
+
+</script>
